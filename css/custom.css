@@ -185,6 +185,7 @@ body {
 }
 
 #fifth-div {
+    background-color: #f1f2f4;
     height: 1000px;
     color: #413867;
     margin-bottom: 50px;
@@ -211,6 +212,7 @@ body {
 
 
 #sixth-div {
+    background-color: #f1f2f4;
     color: #413867;
     margin-bottom: 50px;
 }
@@ -668,7 +670,7 @@ a.socialIcon:hover, .socialHoverClass {
     }
 
     .first-div-icon {
-        width: 70px;
+        width: 95px !important;
     }
 
     .lib-row {
@@ -688,6 +690,7 @@ a.socialIcon:hover, .socialHoverClass {
     .h3-first-div-2 {
         text-align: center;
         margin: 0;
+        font-size: 20px;
     }
 
     .container-last-div {
