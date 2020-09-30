@@ -134,6 +134,22 @@ body {
     text-decoration: none;
 }
 
+a:link {
+    text-decoration: none !important;
+}
+
+a:visited {
+    text-decoration: none !important;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+a:active {
+    text-decoration: none !important;
+}
+
 #first-div {
     background: url(../images/background/background13.png) center center / cover no-repeat;
     height: 1000px;
@@ -172,7 +188,7 @@ body {
     background: url(../images/background/triangle.svg), url(../images/background/triangle-thin.svg), url(../images/background/triangle-filled.svg);
     background-repeat: no-repeat;
     background-origin: content-box;
-    background-position: top left, right, bottom right;
+    background-position: 0% 25%, right, bottom right;
     background-size: 15%, 15%, 5%;
     border: 100px solid #f1f2f4;
 }
@@ -233,12 +249,13 @@ body {
 
 .container-last-div {
     margin-top: 20px;
-    width: 70% !important;
+    width: 68% !important;
     border-top: 7px solid #9767dd;
     border-left: 4px solid #2c264a;
     border-right: 4px solid #2d274d;
     border-bottom: 2px solid #9867dd;
-    background-color: rgba(70, 63, 107, 0.33)
+    background-color: rgba(70, 63, 107, 0.33);
+    padding: 0 !important;
 }
 
 .first-div-icon {
@@ -253,6 +270,11 @@ body {
     transition-duration: 200ms;
     transform: scale(1.1);
     /*width: 122px !important;*/
+}
+
+.lib-panel:hover{
+    transition-duration: 300ms;
+    transform: scale(1.02);
 }
 
 .mycol {
@@ -486,6 +508,54 @@ a.socialIcon:hover, .socialHoverClass {
     -o-transition: all 1.4s;
     -ms-transition: all 1.4s;
     transition: all 1.4s;
+}
+
+.elevator {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    overflow: hidden;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    visibility: hidden;
+    background: rgba(0, 0, 0, 0.7);
+    background-image: none;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.elevator.elevator-is-visible {
+    z-index: 999;
+
+    /* the button becomes visible */
+    visibility: visible;
+    opacity: 1;
+}
+
+.elevator .fa {
+    position: relative;
+    top: 12.5px;
+    left: 14.5px;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.elevator:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.elevator:hover .fa {
+    top: 5px;
+    color: white;
 }
 
 @media (max-width: 575.98px) {
