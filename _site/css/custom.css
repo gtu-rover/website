@@ -558,23 +558,6 @@ a.socialIcon:hover, .socialHoverClass {
     color: white;
 }
 
-.h3-about1{
-    margin-top: 33px;
-}
-
-.h3-about2{
-    margin-top: 20px;
-}
-
-.hr-about{
-    border-top: 1px dashed #493262;
-    margin-bottom: 50px;
-}
-
-.border-img{
-    border-radius: 15px;
-}
-
 @media (max-width: 575.98px) {
     .btn-second-div {
         margin-top: 25px !important;
